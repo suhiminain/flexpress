@@ -21,7 +21,7 @@ load_child_theme_textdomain( 'flexpress', apply_filters( 'child_theme_textdomain
 
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Flexpress' );
-define( 'CHILD_THEME_URL', 'http://www.suhiminain.com/flexpress' );
+define( 'CHILD_THEME_URL', 'bit.ly/genesisflexpress' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 //* Enqueue Scripts and Styles
