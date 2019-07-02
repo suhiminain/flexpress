@@ -58,7 +58,7 @@ function sp_disable_superfish() {
 //* Add viewport meta tag for mobile browsers
 add_theme_support( 'genesis-responsive-viewport' );
 
-/* Add support for custom header
+//* Add support for custom header
 add_theme_support( 'custom-header', array(
 	'width'           => 600,
 	'height'          => 160,
@@ -66,7 +66,7 @@ add_theme_support( 'custom-header', array(
 	'header-text'     => false,
 	'flex-height'     => true,
 ) );
-*/
+ 
 //* Add support for structural wraps
 add_theme_support( 'genesis-structural-wraps', array(
     'header',
