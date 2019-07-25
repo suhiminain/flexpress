@@ -21,15 +21,16 @@ load_child_theme_textdomain( 'flexpress', apply_filters( 'child_theme_textdomain
 
 //* Child theme (do not remove)
 define( 'CHILD_THEME_NAME', 'Flexpress' );
-define( 'CHILD_THEME_URL', 'bit.ly/genesisflexpress' );
+define( 'CHILD_THEME_URL', 'http://my.suhiminain.com/flexpress' );
 define( 'CHILD_THEME_VERSION', '1.0.0' );
 
 //* Enqueue Scripts and Styles
 add_action( 'wp_enqueue_scripts', 'genesis_simple_enqueue_scripts_styles' );
 function genesis_simple_enqueue_scripts_styles() {
 
-	wp_enqueue_style( 'flexpress-fonts', '//fonts.googleapis.com/css?family=Archivo:400,400i|Lato:900', array(), CHILD_THEME_VERSION );
+	wp_enqueue_style( 'flexpress-fonts', '//fonts.googleapis.com/css?family=Archivo:400,400i,700', array(), CHILD_THEME_VERSION );
 	wp_enqueue_style( 'flaticon-fonts', get_stylesheet_directory_uri() . '/fonts/flaticon.css', array(),CHILD_THEME_VERSION);
+	//* wp_enqueue_style( 'sf-display-fonts', get_stylesheet_directory_uri() . '/fonts/SF-Pro-Display-Basic/font.css', array(),CHILD_THEME_VERSION);
 	wp_enqueue_script( 'flexpress-jquery', '//code.jquery.com/jquery-1.10.2.js', array('jquery'), CHILD_THEME_VERSION );
 	$output = array(
 		'mainMenu' => __( 'Menu', 'flexpress' ),

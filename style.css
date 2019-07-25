@@ -1,6 +1,6 @@
 /*
-	Theme Name: flexpress
-	Theme URI: http://my.suhiminain.com/flexpress
+	Theme Name: Flexpress 
+	Theme URI: http://my.suhiminain.com/flexpres 
 	Description: This is the simple theme created for the Genesis Framework.
 	Author: Suhimi Nain
 	Author URI: http://www.suhiminain.com/
@@ -55,7 +55,6 @@
 	- Site Header Navigation
 	- Footer Navigation
 - Content Area
-    - Blog - Grid
 	- Entries
 	- Entry Meta
 	- Pagination
@@ -159,14 +158,14 @@ body > div {
 
 body {
 	background-color: #fff;
-	color: #444;
+	color: #000;
 	font-family: 'Archivo', sans-serif;
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
 	font-weight: 400;
 	line-height: 2;
 	margin: 0;
-	background: #333;
+	background: #000;
 }
 
 a,
@@ -194,10 +193,11 @@ a:hover,
 a:focus {
 	color: #ef2e5e;
 	outline:none;
+	text-decoration: underline;
 }
 
 p {
-	margin: 0 0 28px;
+	margin: 0 0 35px;
 	padding: 0;
 }
 
@@ -208,7 +208,7 @@ ul {
 }
 
 li {
-	list-style-type: none;
+	list-style-type: disc;
 }
 
 hr {
@@ -257,11 +257,11 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Lato', sans-serif;
-	font-weight: 900;
+	/*! font-family: 'Source Sans Pro', sans-serif; */
+	font-weight: 700;
 	line-height: 1.5;
 	margin: 0 0 10px;
-	color: #434264;
+	color: #000;
 	text-transform: uppercase;
 }
 
@@ -635,7 +635,7 @@ th:first-child {
 .sidebar-primary {
 	float: right;
 	width: 100%;
-	background: #eee;
+	background: #e7e7e7;
 	padding: 0 40px;
 }
 
@@ -737,10 +737,10 @@ th:first-child {
 	margin: 0 -40px;
 	padding: 20px 40px;
 	width: calc(100% + 80px);
-	text-transform: uppercase;
+	/*! text-transform: uppercase; */
 	font-family: "Archivo";
-	background: #ddccff;
-	text-align: center;
+	/*! background: #313131; */
+	/*! text-align: center; */
 }
 
 .after-entry,
@@ -762,7 +762,7 @@ th:first-child {
 
 .author-box {
 	margin-bottom: 40px;
-	background:#ddccff;
+	background:#d4d4d4;
 	padding:40px;
 	margin: 0 -40px;
 	width: calc(100% + 80px);
@@ -773,7 +773,7 @@ th:first-child {
 	margin-bottom: 4px;
 	font-style: normal;
 	text-transform: uppercase;
-	text-shadow: 1px 1px #fff;
+	/*! text-shadow: 1px 1px #fff; */
 }
 
 .author-box p:last-child {
@@ -823,7 +823,7 @@ th:first-child {
 	font-size: 38px;
 	margin-top: 10px;
 	line-height: 1.2;
-	text-align: center;
+	/*! text-align: center; */
 }
 
 .archive-title,
@@ -832,7 +832,7 @@ th:first-child {
 }
 .entry-title a,
 .sidebar .widget-title a {
-	color: #434264;
+	color: #000;
 	text-decoration: none;
 }
 
@@ -845,11 +845,7 @@ th:first-child {
 	font-size: 28px;
 	margin: 0 -40px 40px;
 	width: calc(100% + 80px);
-	padding: 20px 40px;
-	background: #ddccff;
-	color: #434264;
-	text-align: center;
-	text-shadow: 1px 1px #fff;
+	padding: 20px 40px ;
 }
 
 /* ## WordPress
@@ -936,6 +932,8 @@ img.alignright,
 .widget ul > li {
 	margin-bottom: 10px;
 	padding-bottom: 10px;
+	margin-left: 25px;
+	padding-left: 10px;
 }
 
 .widget ul > li:last-of-type {
@@ -1091,7 +1089,7 @@ img.alignright,
 	font-size: 42px;
 	font-weight: 900;
 	line-height: 70px;
-	font-family: 'Lato', sans-serif;
+	/*! font-family: 'Poppins', sans-serif; */
 	padding-right:20px;	
 	text-transform: uppercase;
 }
@@ -1101,6 +1099,7 @@ img.alignright,
 .site-title a:hover,
 .site-title a:visited{
 	color:#fff;
+	text-decoration: none;
 }
 
 .header-image .site-title > a {
@@ -1357,41 +1356,12 @@ img.alignright,
 ---------------------------------------------------------------------------------------------------- */
 
 
-/* ## Blog - Grid
---------------------------------------------- */
-
-
-.content.blog-grid{
-	display: grid;
-	grid-template-columns: auto auto;
-	grid-gap: 20px;
-  min-height: 0;  /* NEW */
-  min-width: 0;   /* NEW; needed for Firefox */
-}
-
-.content.blog-grid > article{
-	min-width: 0;
-}
-
-.content.blog-grid a.entry-image-link img{
-	clear: both;
-	float: none !important;
-	display: block;
-}
-
-.content.blog-grid .pagination,
-.content.blog-grid .breadcrumb{
-	grid-column-start: 1;
-	grid-column-end: 3;
-}
-
-
 /* ## Entries
 --------------------------------------------- */
 
 .entry{
 	padding:40px 0;
-	border-bottom: 2px solid #ccc;
+	border-bottom: 2px dotted #ccc;
 }
 
 .entry:last-of-type{
@@ -1399,7 +1369,8 @@ img.alignright,
 }
 .entry img {
 	max-width:100%;
-	padding:0;
+	/*! padding:5px; */
+	/*! border: 1px solid #999; */
 }
 
 .entry-image-link img{
@@ -1445,7 +1416,7 @@ p.entry-meta {
 	vertical-align:middle;
 	text-transform: capitalize;
 	font-size: 14px;
-	text-align: center;
+	/*! text-align: center; */
 }
 
 
@@ -1491,7 +1462,7 @@ p.entry-meta {
 	padding: 0 40px;
 	text-align: center;
 	width:100%;
-	background: #8a8a8a;
+	/*! background: #8a8a8a; */
 	margin: 0 -40px;
 	width: calc(100% + 80px);
 }
@@ -1520,7 +1491,7 @@ p.entry-meta {
 	line-height: 2;
 	letter-spacing: 1px;
 	margin-right: 4px;
-	color: #fff;
+	color: #000;
 }
  
 .archive-pagination a:hover,.archive-pagination a:focus, .archive-pagination .active a {
@@ -1561,6 +1532,7 @@ li.comment {
 .comment-list li {
 	margin-top: 24px;
 	padding: 25px;
+	list-style:none;
 }
 
 .comment-respond input[type="email"],
@@ -1846,16 +1818,6 @@ a.comment-reply-link:hover {
 		padding: 20px;
 	}
 	
-	.content.blog-grid{
-		grid-template-columns: auto;
-		grid-gap: 0;
-		}
-
-	.content.blog-grid .pagination,
-	.content.blog-grid .breadcrumb{
-		grid-column-start: 1;
-		grid-column-end: 2;
-	}
 	
 	.site-header{
 		text-align: center;
@@ -1879,7 +1841,7 @@ a.comment-reply-link:hover {
 	}
 	
 	.entry img{
-		padding: 0;
+		/*! padding: 0; */
 		max-width:100%;
 	}
 	
@@ -1889,8 +1851,8 @@ a.comment-reply-link:hover {
 	}
  	
 	.entry-title {
-		font-size: 32px;
-		text-align: center;
+		font-size: 28px;
+		/*! text-align: center; */
 	}
 	
 	.site-header .nav-primary{
@@ -2051,7 +2013,7 @@ a.comment-reply-link:hover {
         font-size: 14px;
         margin-bottom: 20px;
         padding: 0;
-        text-transform: uppercase;
+        /*! text-transform: uppercase; */
         padding: 20px;
         margin: 0 -20px 20px -20px;
     }
